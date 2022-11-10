@@ -1,0 +1,11 @@
+data_file_name = "/content/imdb_master.csv"
+
+reviews = pd.read_csv(data_file_name, sep=",",
+                      header=0,
+                      names=['type', 
+                             'review',
+                             'label',
+                             'file'
+                            ],
+                      encoding='latin_1', quoting=1, error_bad_lines=False
+                     )
